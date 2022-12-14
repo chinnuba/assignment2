@@ -158,6 +158,7 @@ line_plot(CO2_data1,"CO2 emissions (kt)","CO2 Emission")
 #function to calculate the mean of CO2 emission
 def co2_mean():
     df, dftrans = read_file("C:/Users/CHINNU BABY/Desktop/New folder/co2 emission.csv")
+#filtering the dataframe
     dt = df.set_index('Country Name')
     tran = dt.transpose()
 #removing unimportant columns
